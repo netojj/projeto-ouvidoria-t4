@@ -14,7 +14,17 @@ while opcao != 7:
         if len(manifestacoes) > 0:
             print("Lista de Manifestações:")
             for index in range(len(manifestacoes)):
-                print(index+1,"-",manifestacoes[index])
+                print(index+1,"-",manifestacoes[index]);
 
         else:
-            print("Não existem manifestações a serem exibidas!")
+            print("Não existem manifestações a serem exibidas!");
+
+    elif opcao == 2:
+        novaManifestacao = input("Digite a manifestação: ");
+        manifestacoes.append(novaManifestacao);
+        print("Manifestação cadastrada com sucesso!")
+
+    elif opcao == 3:
+        palavraPlural = "manifestações cadastradas" if len(manifestacoes) > 1 else "manifestação cadastrada"
+        print(f'Temos um total de {len(manifestacoes)} {palavraPlural} em sistema');
+
