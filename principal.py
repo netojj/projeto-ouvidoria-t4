@@ -4,6 +4,7 @@
 
 opcao = 1;
 manifestacoes = [ ];
+print("Ouvidoria - Universidade XYZ")
 
 while opcao != 7:
     print("\nOpções: \n1)Listagem das Manifestações\n2)Criar uma nova Manifestação\n3)Exibir quantidade de manifestações\n"
