@@ -29,3 +29,10 @@ while opcao != 7:
         palavraPlural = "manifestações cadastradas" if len(manifestacoes) > 1 else "manifestação cadastrada"
         print(f'Temos um total de {len(manifestacoes)} {palavraPlural} em sistema');
 
+    elif opcao == 4:
+        busca = int(input("Qual a manifestação você deseja exibir? "))
+        if busca >= 0 and busca <= len(manifestacoes):
+            print(f'Manifestação encontrada: {busca} - {manifestacoes[busca-1]}' )
+        else:
+            print('Nenhuma manifestação encontrada')
+
