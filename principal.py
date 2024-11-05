@@ -33,6 +33,6 @@ while opcao != 7:
         busca = int(input("Qual a manifestação você deseja exibir? "))
         if busca >= 0 and busca <= len(manifestacoes):
             print(f'Manifestação encontrada: {busca} - {manifestacoes[busca-1]}' )
-        else:
+        elif:
             print('Nenhuma manifestação encontrada')
 
