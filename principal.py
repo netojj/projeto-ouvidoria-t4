@@ -1,11 +1,11 @@
 '''
-Bruna Neves
-Ithalo Teodósio
-Esdras de Menezes
-Priscilla Lima
 André Holanda
+Bruna Neves
+Esdras de Menezes
 Felipe Monteiro
+Ithalo Teodósio
 José Neto
+Priscilla Lima
 Samuel Ferreira
 '''
 
@@ -22,10 +22,9 @@ menu = ('''
     6) Sair do sistema
     ''')
 
-print(menu)
-
 while opcao != 6:
-
+    
+    print(menu)
     opcao = int(input("Digite a opção desejada: "))
 
     if opcao == 1:
@@ -89,6 +88,5 @@ while opcao != 6:
 
     elif opcao != 6:
         print("\nOpção Inválida! Tente novamente.")
-        print(f"{menu}")
 
 print("\n====== Obrigado por usar o programa da Ouvidoria. Até a próxima! ======")
